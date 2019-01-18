@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Colorlib">
+    <meta name="description" content="#">
+    <meta name="keywords" content="#">
+    <!-- Page Title -->
+    <title>Blockbuster Film Hire</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900" rel="stylesheet">
+    <!-- Simple line Icon -->
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+    <!-- Themify Icon -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- Hover Effects -->
+    <link rel="stylesheet" href="css/set1.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--js searchTitles -->
+    <script src="js/films.js"></script>
+
+</head>
+
+<body onload="loadDb()">
+    <!--============================= HEADER =============================-->
+    <div class="nav-menu">
+        <div class="bg transition">
+            <div class="container-fluid fixed">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand" href="index.html">BlokBustr</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-menu"></span>
+              </button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SLIDER -->
+    <section class="slider d-flex align-items-center">
+        <!-- <img src="images/th.jpg" class="img-fluid" alt="#"> -->
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-12">
+                    <div class="slider-title_box">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="slider-content_wrap">
+                                    <h1>Welcome to BlokBustr</h1>
+
+                                    <h5>Use our search functions to find a film to buy/rent today.</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-md-10">
+                                <form class="form-wrap mt-4">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+
+                                        <input type="text" placeholder="Type any letter to begin searching our collection.." id="textsearch" class="btn-group1" oninput="searchTitles(document.getElementById('textsearch'))">
+                                        <button onclick="searchTitles(document.getElementById('textsearch'))" type="submit" class="btn-form"><span class="icon-magnifier search-icon"></span>TITLES/INFO/PRICES<i class="pe-7s-angle-right"></i></button>
+                                        <!--<div id="hey"></div>-->
+                                        <br><br><br>
+
+                                        <!--<input type="text" placeholder="Enter any letter to begin search.." id="categorysearch" class="btn-group1" oninput="searchCategories(document.getElementById('categorysearch'))">
+                                        <button onclick="searchCategories(document.getElementById('categorysearch'))" type="submit" class="btn-form"><span class="icon-magnifier search-icon"></span>CATEGORIES<i class="pe-7s-angle-right"></i></button>
+
+                                        <!--<div id="hi"></div>-->
+                                    </div>
+                                </form>
+                                <div class="slider-content_wrap">
+                                <h5><div id="hey"></div></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--// SLIDER -->
+    <!--//END HEADER -->
+    <!--============================= FIND A MOVIE =============================-->
+    <section class="main-block">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <div class="styled-heading">
+                        <h3>Latest Releases</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="find-place-img_wrap">
+                        <div class="grid">
+                            <figure class="effect-ruby">
+                                <a href="https://www.youtube.com/watch?v=-7p2uC7E5Rs"><img src="images/jw2.jpg" class="img-fluid" alt="img13" /></a>
+                                <figcaption>
+                                    <h5>John Wick </h5>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row find-img-align">
+                        <div class="col-md-12">
+                            <div class="find-place-img_wrap">
+                                <div class="grid">
+                                    <figure class="effect-ruby">
+                                        <a href="https://www.youtube.com/watch?v=36mnx8dBbGE"><img src="images/casinoroyale.jpg" class="img-fluid" alt="img13" /></a>
+                                        <figcaption>
+                                            <h5>James Bond: Casino Royale</h5>
+
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="find-place-img_wrap">
+                                <div class="grid">
+                                    <figure class="effect-ruby">
+                                        <a href="https://www.youtube.com/watch?v=J-wXbyEQ5TM"><img src="images/gt.jpg" class="img-fluid" alt="img13" /></a>
+                                        <figcaption>
+                                            <h5>Gullivers Travels</h5>
+
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row find-img-align">
+                        <div class="col-md-12">
+                            <div class="find-place-img_wrap">
+                                <div class="grid">
+                                    <figure class="effect-ruby">
+                                        <a href="https://www.youtube.com/watch?v=GVAoz3cgjTY"><img src="images/kid.jpg" class="img-fluid" alt="img13" /></a>
+                                        <figcaption>
+                                            <h5>Home Alone</h5>
+
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="find-place-img_wrap">
+                                <div class="grid">
+                                    <figure class="effect-ruby">
+                                        <a href="https://www.youtube.com/watch?v=NQdg0asVhwE"><img src="images/40.jpg" class="img-fluid" alt="img13" /></a>
+                                        <figcaption>
+                                            <h5>40-Year Old Virgin</h5>
+
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//END FIND PLACES -->
+    <!--============================= CATEGORIES =============================-->
+    <section class="main-block">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <div class="styled-heading">
+                        <h3>Browse Categories</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 category-responsive">
+                    <a href="#/" class="category-wrap">
+                        <div class="category-block">
+                            <button <svg onclick="showSciFi(document.getElementById('textarea'))" class="category-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 496 496" style="enable-background:new 0 0 496 496;" xml:space="preserve" width="512px" height="512px"></button><g><g>
+                            </svg>
+                            <h6>Sci-Fi</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 category-responsive">
+                    <a href="#/" class="category-wrap">
+                        <div class="category-block">
+                            <button <svg onclick="showDocumentary(document.getElementById('textarea'))" class="category-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 469.824 469.824" style="enable-background:new 0 0 469.824 469.824;" xml:space="preserve" width="512px"
+                                height="512px"></button><g><g>
+                            </svg>
+                            <h6>Documentary</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 category-responsive">
+                    <a href="#/" class="category-wrap">
+                        <div class="category-block">
+                            <button <svg onclick="showSports(document.getElementById('textarea'))" class="category-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_2" x="0px" y="0px" viewBox="0 0 503.607 503.607" style="enable-background:new 0 0 503.607 503.607;" xml:space="preserve" width="512px"
+                                height="512px"></button><g><g transform="translate(1 1)">
+                            </svg>
+                            <h6>Sports</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 category-responsive">
+                    <a href="#/" class="category-wrap">
+                        <div class="category-block">
+                            <button <svg onclick="showHorror(document.getElementById('textarea'))" class="category-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_3" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px"></button><g><g>
+                            </svg>
+                            <h6>Horror</h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 category-responsive">
+                    <a href="#/" class="category-wrap">
+                        <div class="category-block">
+                            <button <svg onclick="showChildren(document.getElementById('textarea'))" class="category-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_2" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="512px" height="512px"></button><g><g>
+                            </svg>
+                            <h6>Children</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 category-responsive">
+                    <a href="#/" class="category-wrap">
+                        <div class="category-block">
+                            <button <svg onclick="showAnimation(document.getElementById('textarea'))" class="category-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_3" x="0px" y="0px" viewBox="0 0 511.988 511.988" style="enable-background:new 0 0 511.988 511.988;" xml:space="preserve" width="512px"
+                                height="512px"></button><g><g>
+                              </svg>
+                            <h6>Animation</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 category-responsive">
+                    <a href="#/" class="category-wrap">
+                        <div class="category-block">
+                            <button <svg onclick="showFamily(document.getElementById('textarea'))" class="category-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_4" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px"></button><g><g>
+                            </svg>
+                            <h6>Family</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 category-responsive">
+                    <a href="#/" class="category-wrap">
+                        <div class="category-block">
+                            <button <svg onclick="showComedy(document.getElementById('textarea'))" class="category-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_5" x="0px" y="0px" viewBox="0 0 61.168 61.168" style="enable-background:new 0 0 61.168 61.168;" xml:space="preserve" width="512px"
+                                height="512px"></button><g><g>
+                            </svg>
+                            <h6>Comedy</h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <p>
+            <div id="textarea"></div>
+            </p>
+        </div>
+    </section>
+    <!--//END CATEGORIES -->
+    <p>
+    <audio controls autoplay>
+        <source src="filmintro.mp3" />
+        <a>Download this file.</a>
+    </audio>
+    </p>
+
+<!--Find Us & Contact Us-->
+    <div class="nav-menu">
+        <div class="bg transition">
+            <div class="container-fluid fixed">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand" href="index.html">BlokBustr</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-menu"></span>
+              </button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SLIDER -->
+    <section class="slider d-flex align-items-center">
+
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-12">
+                    <div class="slider-title_box">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="slider-content_wrap">
+                                    <h1>Find Us or Contact Us</h1>
+                                    <h5>See the map below for our store.</h5>
+                                    <h5>Tel: 07777777676</h5>
+                                    <h5>Email: wontgetareply@gmail.com</h5>
+                                </div>
+                            </div>
+                        </div
+
+                    </div>
+                    <img src="images/map.jpg" class="img-fluid" alt="#">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--============================= FOOTER =============================-->
+    <footer class="main-block dark-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p>Copyright &copy; 2018 Listing. All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by Colorlib but drastically edited by Alex Thain</a></p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--//END FOOTER -->
+
+
+
+
+    <!-- jQuery, Bootstrap JS. -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--<script src="js/films.js"></script>
+
+    <script>
+        $(window).scroll(function() {
+            // 100 = The point you would like to fade the nav in.
+
+            if ($(window).scrollTop() > 100) {
+
+                $('.fixed').addClass('is-sticky');
+
+            } else {
+
+                $('.fixed').removeClass('is-sticky');
+
+            };
+        });
+    </script>
+</body>
+
+</html>
